@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
+    <title>Tela de Contato</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -22,17 +23,18 @@
         </ul>
     </nav>
     <div class="login-container">
-        <h2>Login Indie</h2>
+        <h2>Contato</h2>
         <form>
             <div class="input-group">
-                <label for="txtUsuario">Usuário</label>
-                <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Digite seu usuário" required>
+                <label for="txtNome">Nome:</label>
+                <input type="text" id="txtNome" name="txtNome" placeholder="Digite seu nome" required>
             </div>
             <div class="input-group">
-                <label for="txtSenha">Senha</label>
-                <input type="password" id="txtSenha" name="txtSenha" placeholder="Digite sua senha" required>
+                <label for="txtEmail">Email:</label>
+                <input type="text" id="txtEmail" name="txtEmail" placeholder="Digite seu email" required>
             </div>
-            <button type="submit">Entrar</button>
+            <!-- Botão sem o atributo onclick; o evento será adicionado pelo script.js -->
+            <input type="button" value="Enviar Solicitação" id="btnEnviar">
         </form>
     </div>
 </body>
